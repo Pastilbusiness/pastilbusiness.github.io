@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastil Business - Your Trusted Partner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Pastil Business</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products/Services</a></li>
+                <li><a href="#why-choose-us">Why Choose Us?</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Welcome to Pastil Business</h2>
+        <p>Your introduction to our world of quality and innovation.</p>
+        <img src="6babeaa7-6a11-44dc-90fa-2a4d520854e8.jpg" alt="Pastil Business Banner" class="hero-img">
+    </section>
+
+    <section id="about">
+        <h2>About / Introduction</h2>
+        <p>At Pastil Business, we are dedicated to providing exceptional services and products. Our mission is to deliver value and build lasting relationships with our customers.</p>
+        <h3>Who We Are / What Makes Us Unique</h3>
+        <p>We are a team of passionate professionals with over 10 years of experience. What sets us apart is our commitment to sustainability, innovation, and customer-centric solutions that adapt to your needs.</p>
+    </section>
+
+    <section id="products">
+        <h2>Products / Services</h2>
+        <p>Explore our range of offerings designed to meet your needs.</p>
+        <div class="product-menu">
+            <div class="product-item">
+                <img src="76022e40-8adf-4428-a2ab-eaa799e3d851.jpg" alt="Product 1 - Premium Pastil ">
+                <h3>Premium Pastil </h3>
+                <p>A delicious, handcrafted candy made with natural ingredients. Perfect for gifting or indulgence.</p>
+                <p>Price: 30 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="6babeaa7-6a11-44dc-90fa-2a4d520854e8.jpg" alt="Product 2 - Pastil chicken">
+                <h3>Custom Pastil Consulting</h3>
+                <p>Expert advice on product development and branding tailored to your business.</p>
+                <p>Price: 25 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="4ceb1122-cbed-4d51-8cbf-2548fb3ee2c1.jpg" alt="Product 3 - Pastil Isaw">
+                <h3>Pastil Accessory Kit</h3>
+                <p>Essential tools and accessories for creating your own pastil products at home.</p>
+                <p>Price: 25 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="4ffd0441-77bb-4c8e-b606-61b365787cfe.jpg" alt="Product 4 - Siomai Rice">
+                <h3>Strawberry Pastil Delight</h3>
+                <p>A fruity twist on classic pastil, infused with real strawberry flavor for a refreshing treat.</p>
+                <p>Price: 35 pesos</p>
+            </div>
+            <div class="product-item">
+                <img src="300ce7d4-8365-4b5a-a7c4-8096a2100b68.jpg" alt="Product 5 - Siopao">
+                <h3>Pastil Gift Box Set</h3>
+                <p>A curated assortment of pastil candies in an elegant box, ideal for gifts and special occasions.</p>
+                <p>Price: 20 pesos      </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li>High-quality, ethically sourced materials.</li>
+            <li>Personalized customer support and fast delivery.</li>
+            <li>Innovative solutions backed by years of expertise.</li>
+            <li>Competitive pricing with a focus on sustainability.</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews / Feedback</h2>
+        <div class="review">
+            <p>"Pastil Business exceeded my expectations! Their products are top-notch." - Jane Doe</p>
+        </div>
+        <div class="review">
+            <p>"Great service and unique offerings. Highly recommend!" - John Smith</p>
+        </div>
+        <div class="review">
+            <p>"Innovative and reliable. Will buy again." - Emily Johnson</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Get in touch with us today!</p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Email: info@pastilbusiness.com | Phone: (123) 456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Pastil Business. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Basic form submission handler (client-side only - shows alert)
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            alert('Thank you for your message! We will get back to you soon. (Note: This is a demo - no email was sent.)');
+            // Reset the form
+            this.reset();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #f0f9f0, #e8f5e8); /* Light green gradient background */
+    color: #333;
+    line-height: 1.6;
+    text-align: center; /* Centers all body content */
+}
+
+header {
+    background-color: #4caf50; /* Green header */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c8e6c9; /* Light green on hover */
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #e8f5e8, #f0f9f0);
+    color: #2e7d32; /* Dark green */
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center; /* Centers all section content */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about, #why-choose-us, #reviews, #contact {
+    text-align: center;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+#about p, #why-choose-us ul, #reviews .review, #contact p {
+    text-align: center;
+}
+
+#products {
+    background-color: #f0f9f0;
+    text-align: center; /* Centers products section content */
+}
+
+.product-menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+    justify-items: center; /* Centers grid items */
+}
+
+.product-item {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center; /* Centers content inside each item */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-item h3 {
+    color: #4caf50;
+    margin-bottom: 10px;
+}
+
+.product-item p {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-weight: 600;
+    color: #2e7d32;
+    font-size: 1.2em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.review {
+    background: #f0f9f0;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border-left: 5px solid #4caf50;
+    text-align: center; /* Centers review text */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center; /* Centers form elements */
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #4caf50;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #2e7d32;
+    outline: none;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #2e7d32;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .product-menu {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .hero-img {
+        max-width: 100%;
+    }
+}
